@@ -1,0 +1,58 @@
+.EshetToursPromotions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: black;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 4%;
+}
+
+.PageContent, .FilteredTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    width: 100%;
+}
+
+.FilteredTable {
+    border: 1px solid rgb(93, 152, 223);
+    border-radius: 5px;
+    padding: 10px 8px;
+}
+
+.ToursTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:flex-start;
+    width: 100%;
+    margin-top: 13px; 
+}
+
+.Loader {
+    align-self: center;
+    justify-self: center;
+}
+
+/* Small phones to small tablets: from 860px to 0px*/
+@media only screen and (max-width: 860px) {
+    .EshetToursPromotions {
+        height: fit-content;
+        padding: 0;
+    }
+    .PageContent {
+        align-items: center;
+    }
+    .FilteredTable {
+        width: fit-content;
+    }
+    .ToursTable {
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;	
+    }
+}
