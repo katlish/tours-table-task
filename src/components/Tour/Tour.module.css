@@ -1,27 +1,13 @@
 .Tour {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-end;
     width: 250px;
     height: 180px;
-    border: 1px solid #c4c4c4;
     margin: 7.5px 0 7.5px 30px;
+    border: 1px solid #c4c4c4;
+
 }
-
-.ImageContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
-  width: 100%;
-}
-
-
 
 .Image {
-  height: 100%;
+  height: 75%;
   width: 100%;
   object-fit: cover;
 }
@@ -29,13 +15,21 @@
 
 .Title {
   width: 100%;
-  height: 20%;
-  text-align: end;
-  padding: 3px;
+  height: 25%;
+  text-align: start;
+  padding: 9px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: rtl;
 }
+
 .Tour:hover {
   border: 1px solid black;
 }
+
+
+
 
 @media only screen and (max-width: 860px) {
   .Tour {
@@ -45,17 +39,13 @@
     margin: 7px 0;
   }
 
-  .ImageContainer {
+  .Image {
     height: 100%;
     width: 50%;
   }
 
   .Title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 50%;
     height: 100%;
-    padding: 0;
   }
 }

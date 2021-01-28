@@ -7,8 +7,7 @@ export interface IInputProps {
     label: string
 }
 
-function Input({text, changeHandler, label}:IInputProps){
-    return (
+const Input = ({text, changeHandler, label}:IInputProps) =>
         <div className={classes.Input}> 
             <input 
                     type='text' 
@@ -19,7 +18,5 @@ function Input({text, changeHandler, label}:IInputProps){
              />
             {label}
         </div>
-    ) 
-  }
   
 export default Input;

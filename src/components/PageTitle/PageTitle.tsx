@@ -7,12 +7,9 @@ export interface ITitleProps {
 }
   
 
-function PageTitle({title}:ITitleProps){
-    return (
+const PageTitle = ({title}:ITitleProps) => 
         <div className={classes.PageTitle}> 
             {title}                
         </div>
-    ) 
-  }
   
 export default PageTitle;
