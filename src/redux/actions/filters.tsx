@@ -1,15 +1,15 @@
-import {FILTER_TITLE,CLEAR_FILTER} from './actionTypes';
+import { FILTER_TITLE, CLEAR_FILTER } from "./actionTypes";
 
 const filtersReducerDefaultState = {
-    title: ''
+  title: ""
 };
 
-export const filterByTitle = (title = '') => ({
-    type: FILTER_TITLE,
-    title
+export const filterByTitle = (title = "") => ({
+  type: FILTER_TITLE,
+  title
 });
 
 export const clearFilter = () => ({
-    type: CLEAR_FILTER,
-    defaultFilter: filtersReducerDefaultState
+  type: CLEAR_FILTER,
+  defaultFilter: filtersReducerDefaultState
 });
